@@ -1,10 +1,12 @@
-package edu.cofc.geoquiz;
+package edu.cofc.geoquiz.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import edu.cofc.geoquiz.R;
 
 public class MainActivity extends AppCompatActivity {
 
