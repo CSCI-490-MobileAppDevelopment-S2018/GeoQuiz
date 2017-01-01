@@ -5,11 +5,11 @@ package edu.cofc.geoquiz.model;
  */
 public class Question {
 
-    private int testResId;
+    private int textResId;
     private boolean answerTrue;
 
-    public Question(int testResId, boolean answerTrue) {
-        this.testResId = testResId;
+    public Question(int textResId, boolean answerTrue) {
+        this.textResId = textResId;
         this.answerTrue = answerTrue;
     }
 
@@ -17,12 +17,13 @@ public class Question {
         Auto-generated getters and setters
         Code -> Generate -> Getter and Setter
      */
-    public int getTestResId() {
-        return testResId;
+
+    public int getTextResId() {
+        return textResId;
     }
 
-    public void setTestResId(int testResId) {
-        this.testResId = testResId;
+    public void setTextResId(int textResId) {
+        this.textResId = textResId;
     }
 
     public boolean isAnswerTrue() {

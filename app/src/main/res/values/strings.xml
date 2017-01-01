@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
-    <string name="question_text">Charleston is the capital of South Carolina</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="next_button">Next</string>
+
+    <!-- Questions -->
+    <string name="charleston_question">Charleston is the capital of South Carolina</string>
+    <string name="columbia_question">Columbia is the capital of South Carolina</string>
+    <string name="marion_question">Frances Marion lake is man-made</string>
+    <string name="morris_island_question">Morris Island has an active lighthouse</string>
+    <string name="cofc_question">CofC was founded in 1770</string>
+    <string name="holy_city_question">Charleston is known for tattoo parlors</string>
+
 
 </resources>
