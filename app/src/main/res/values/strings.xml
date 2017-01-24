@@ -4,7 +4,7 @@
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="next_button">Next</string>
+    <string name="next_button_text">Next</string>
 
     <!-- Questions -->
     <string name="charleston_question">Charleston is the capital of South Carolina</string>
