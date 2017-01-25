@@ -68,12 +68,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton imagebutton = new ImageButton(MainActivity.this);
-        imagebutton.setMaxWidth(13);
-
-        LinearLayout layout = (LinearLayout) findViewById(R.id.mainLayout);
-        layout.addView(imagebutton);
-
     }
 
     private void updateQuestion() {
