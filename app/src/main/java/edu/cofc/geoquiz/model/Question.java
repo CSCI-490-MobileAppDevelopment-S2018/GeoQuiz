@@ -1,5 +1,9 @@
 package edu.cofc.geoquiz.model;
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
 /**
  * Created by kbriggs on 12/31/16.
  */

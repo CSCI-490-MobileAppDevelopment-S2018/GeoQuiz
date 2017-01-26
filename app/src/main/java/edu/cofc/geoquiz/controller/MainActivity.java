@@ -1,7 +1,14 @@
 package edu.cofc.geoquiz.controller;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -13,6 +20,8 @@ import edu.cofc.geoquiz.R;
 import edu.cofc.geoquiz.model.Question;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     private Button trueButton;
     private Button falseButton;
@@ -30,10 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
     private int currentIndex = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         questionTextView = (TextView) findViewById(R.id.question_text_view);
         updateQuestion();
@@ -87,5 +99,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "this is a char sequence", Toast.LENGTH_SHORT);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        Log.i("Activity", "I saved, I thought that meant something");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        Log.i("Activity", "I restored");
     }
 }
